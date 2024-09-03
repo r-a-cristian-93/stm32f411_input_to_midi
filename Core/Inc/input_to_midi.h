@@ -6,7 +6,8 @@
 #include <stdbool.h>
 
 // Find by trial and error.
-#define ADC1_IN9_BUFFER_LENGTH (8)
+// use 100uF electrolitic capacitor on each ADC input
+#define ADC1_IN9_BUFFER_LENGTH (16)
 
 TIMER_HandleTypeDef htimer1;
 uint32_t adc1_in9_buffer[ADC1_IN9_BUFFER_LENGTH] = {0};
